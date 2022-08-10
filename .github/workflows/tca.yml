@@ -1,9 +1,9 @@
 name: Tencent Cloud Code Analysis
 
 on:
-  pull_request:
+  push:
     branches:
-      - main
+      - master
 
 jobs:
   TCA:
