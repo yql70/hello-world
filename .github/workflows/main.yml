@@ -25,7 +25,7 @@ jobs:
 
       - name: Push to Gitee
         run: |
-          remote_repo="https://gitee.com/yql70/hello-world.git"
+          remote_repo="https://${GITEE_USERNAME}:${GITEE_PASSWORD}@gitee.com/yql70/hello-world.git"
 
           git remote add gitee "${remote_repo}"
           git show-ref # useful for debugging
